@@ -41,3 +41,29 @@ const profilo = [
 }
 ];
 
+console.log(profilo);
+
+for ( let key in profilo){
+  console.log(profilo[key]);
+}
+
+
+let card = `
+<div class="col-4">
+
+        <div class="card" style="width: 18rem;">
+          <img src="${profilo.immagine}" class"card-img-top" alt="${profilo.immagine}">
+          <div class="card-body">
+            <h5 class="card-title">${profilo.name}</h5>
+            <p class="card-text">${profilo.role}</p>
+          </div>
+        </div>
+
+      </div> `;
+
+      row.innerHTML += card;
+
+
+
+
+
